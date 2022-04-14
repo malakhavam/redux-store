@@ -2,7 +2,7 @@ import React from 'react';
 
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
-// redux
+// redux import
 import { useDispatch } from 'react-redux';
 
 const CartItem = ({ item }) => {
