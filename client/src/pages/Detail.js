@@ -19,7 +19,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 
 function Detail() {
-  
+
   // refactor for redux
   const dispatch = useDispatch();
 

@@ -2,6 +2,7 @@ const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 
+// bring in .env
 require('dotenv').config();
 
 const { typeDefs, resolvers } = require('./schemas');
@@ -24,9 +25,9 @@ app.use(express.json());
 // Serve up static assets
 app.use('/images', express.static(path.join(__dirname, '../client/images')));
 
+// if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
-
 
   app.get('*', (req, res) => {
     res.sendFile(path.join(publicPath, 'index.html'));

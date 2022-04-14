@@ -7,15 +7,15 @@ import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
-// import redux 
+// import redux
 import { useDispatch, useSelector } from 'react-redux';
 
 function ProductList() {
-
- // refactor for redux
- const dispatch = useDispatch();
- const state = useSelector((state) => state);
  
+  // refactor for redux
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+
   const { currentCategory } = state;
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);

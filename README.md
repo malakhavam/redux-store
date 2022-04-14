@@ -17,7 +17,7 @@
    ## Installation 
    
    The project was uploaded to GitHub at the following repository: https://github.com/malakhavam/redux-store <br/>
-   Deployed application access with the Heroku:   <br/>  
+   Deployed application access with the Heroku: https://malakhava-redux-store.herokuapp.com/ <br/>  
    To install the project follow these steps: 
    * Clone the application from GitHub with: git clone [clone link from GitHub] 
    * From the root folder, install the dependencies with: npm install
@@ -25,7 +25,7 @@
 
    ## Screenshot
 
-   ![Mockup-image]()
+   ![Mockup-image](./client/src/assets/screenshot.png)
   
    ## Contributors
 
